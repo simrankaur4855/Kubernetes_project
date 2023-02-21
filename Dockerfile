@@ -7,7 +7,7 @@ WORKDIR /var/www/html
 RUN unzip webuild.zip
 RUN cp -rvf webuild/* .
 RUN rm -rf webuild webuild.zip
-CMD ["/usr/bin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80 22
 
 

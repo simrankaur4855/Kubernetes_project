@@ -1,5 +1,5 @@
 FROM centos:latest
-RUN sudo yum install -y httpd\
+RUN yum install -y httpd\
  zip\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page283/webuild.zip /var/www/html/

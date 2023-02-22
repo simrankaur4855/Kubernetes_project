@@ -1,7 +1,8 @@
-- hosts: 3.22.186.166
+- hosts: all
   become: true
   tasks:
     - name: create new Deployment
-      command: kubectl apply -f Deployment.yaml
+      command: kubectl apply -f /home/ubuntu/Deployment.yaml
     - name: create new servie
-      command: kubectl apply -f Service.yaml
+      command: kubectl apply -f /home/ubuntu/Service.yaml
+  

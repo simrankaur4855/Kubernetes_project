@@ -6,7 +6,7 @@ metadata:
     app: miss-simran
 spec:
   ports:
-    - port: 8083
+    - port: 8080
       targetPort: 80
       nodePort: 32100
   selector:
